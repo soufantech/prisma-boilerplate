@@ -12,9 +12,9 @@ const app = async () => {
     resolvers,
   })
 
-  new ApolloServer({ schema, context: context }).listen({ port: process.env.PORT }, () =>
+  new ApolloServer({ schema, context: context }).listen({ port: process.env.APP_PORT }, () =>
     console.log(
-      `Graphql docs: http://localhost:${process.env.PORT}`,
+      `Graphql docs: http://localhost:${process.env.APP_PORT}`,
     ),
   )
 }
