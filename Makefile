@@ -9,9 +9,9 @@ run:
 
 install: requirements
 	@echo "Adding dependencies"
-	yarn install
-	yarn prisma introspect
-	yarn prisma generate
+	@yarn install
+	@yarn prisma introspect
+	@yarn prisma generate
 
 requirements:
 	@echo "Creating .env file"
