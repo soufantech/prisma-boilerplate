@@ -7,13 +7,13 @@ help:
 run: 
 	yarn dev
 
-install: requiriments
+install: requirements
 	@echo "Adding dependencies"
 	yarn install
 	yarn prisma introspect
 	yarn prisma generate
 
-requiriments:
+requirements:
 	@echo "Creating .env file"
 	@touch .env
 	@printf 'DATABASE_URI=$(DATABASE_URI)\nAPP_PORT=$(APP_PORT)' > .env
